@@ -1,0 +1,26 @@
+.intro{
+    height: 70vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.aanviklogo{position: absolute;
+    width:450px;
+    margin-top: -220px;
+    z-index:10000;
+}
+
+.aanviklogo:hover{
+transform:scale(1.1);
+}
+
+
+.linkcontents{
+    cursor: pointer !important;
+}
+
+.arrowdown{
+    transform:rotateZ(90);
+}

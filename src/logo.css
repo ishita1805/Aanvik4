@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+
+.header{/*display: flex;
+    flex-direction: row;*/
+   
+  }
+ .abc{position: absolute; 
+    /* flex:0.8; */
+ color: #ededed;
+ top: 0;
+ margin-left:-200px;
+align-items: center;
+ font-size: 1.8rem;
+ font-family: "Poppins", sans-serif;
+
+}
+
+.TEC_logo{float: left;
+    /* flex:0.2; */
+    z-index: 1000;
+
+}
+
