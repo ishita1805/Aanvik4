@@ -66,7 +66,7 @@ useEffect(()=>{
       
       
       <div className="loader" >
-        <Loading/>
+        
       </div>
       
       {/* <Bg/> */}
