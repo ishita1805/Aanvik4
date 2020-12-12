@@ -65,7 +65,7 @@ function Cards() {
                         <div className="proj1" style={{ zIndex: "100000", width: "100%", height: "100%" }}></div>
                         <div className="content" >
                             <h2 className="x">Real time Handwritten digit recognition</h2>
-                            <a href="https://meet.google.com/zwe-oezy-kpq" style={{}}>Go to Live Demo!</a>
+                            <a target="__blank" href="https://meet.google.com/zwe-oezy-kpq" style={{}}>Go to Live Demo!</a>
 
                         </div>
                     </div>
@@ -79,7 +79,7 @@ function Cards() {
                         <div className="proj2" style={{ zIndex: "100000", width: "100%", height: "100%" }}></div>
                         <div className="content">
                             <h2>Object detection using Computer Vision</h2>
-                            <a href="https://meet.google.com/xzr-wmap-irx">Go to Live Demo!</a>
+                            <a target="__blank" href="https://meet.google.com/xzr-wmap-irx">Go to Live Demo!</a>
                         </div>
                     </div>
                 </Tilt>
@@ -92,7 +92,7 @@ function Cards() {
                         <div className="content">
                             <h2>Bidirectional person counter using IR sensor</h2>
                             <p className="onelineintro">One Line intro</p>
-                            <a href="https://meet.google.com/hsv-cjav-fhn">Go to Live Demo!</a>
+                            <a target="__blank" href="https://meet.google.com/hsv-cjav-fhn">Go to Live Demo!</a>
                         </div>
                     </div>
                 </Tilt>
@@ -106,7 +106,7 @@ function Cards() {
                         <div className="proj4" style={{ zIndex: "100000", width: "100%", height: "100%" }}></div>
                         <div className="content">
                             <h2 style={{ marginTop: "14px" }}>Temperature and Humidity measurement using DHT sensor </h2>
-                            <a href="https://meet.google.com/qcy-akgj-gqx" style={{ marginTop: "0px" }}>Go to Live Demo!</a>
+                            <a target="__blank" href="https://meet.google.com/qcy-akgj-gqx" style={{ marginTop: "0px" }}>Go to Live Demo!</a>
 
                         </div>
 
@@ -122,7 +122,7 @@ function Cards() {
                         <div className="proj5" style={{ zIndex: "100000", width: "100%", height: "100%" }}></div>
                         <div className="content">
                             <h2 style={{ marginTop: "14px" }}>Detection of UID from nanotechnology based RFID tags </h2>
-                            <a href="https://meet.google.com/gjj-enum-jdx" style={{ marginTop: "0px" }}>Go to Live Demo!</a>
+                            <a target="__blank" href="https://meet.google.com/gjj-enum-jdx" style={{ marginTop: "0px" }}>Go to Live Demo!</a>
                         </div>
                     </div>
                 </Tilt>
@@ -132,7 +132,7 @@ function Cards() {
             </div>
             {/* <ExpandMoreIcon className="arrowdown1" style={{color:"black",zoom:"3",bottom:"0",zIndex:"10000",marginTop:"10px",backgroundColor:"none"}} onClick={function(){
            document.getElementById("footer__body").scrollIntoView({behavior:"smooth"})}}/> */}
-            <a className="livebtn" href="https://youtube.com" style={{ display: "flex", flexDirection: "row", padding: "20px", backgroundColor: "red", textDecoration: "none", color: "white", fontFamily: "Poppins,sans-serif", marginTop: "70px", borderRadius: "20px", alignItems: "center", justifyContent: "center" }}><YouTubeIcon className="yticon" style={{ padding: "0px", marginTop: "0px", zoom: "1.2" }} />         Join our livestream on YouTube!</a>
+            <a className="livebtn" target="__blank" href="https://youtube.com" style={{ display: "flex", flexDirection: "row", padding: "20px", backgroundColor: "red", textDecoration: "none", color: "white", fontFamily: "Poppins,sans-serif", marginTop: "70px", borderRadius: "20px", alignItems: "center", justifyContent: "center" }}><YouTubeIcon className="yticon" style={{ padding: "0px", marginTop: "0px", zoom: "1.2" }} />         Join our livestream on YouTube!</a>
 
 
             <Footer />

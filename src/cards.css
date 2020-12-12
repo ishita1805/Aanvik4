@@ -31,8 +31,7 @@
  .proj3 {
   background-image: url("https://forum.mysensors.org/uploads/upload-aacf9418-0c17-417b-b340-0ce5026a8ba0.jpg");
   background-size: cover;
- 
-   
+  background-position:center;  
   height: 85px !important;
  }
  .proj4 {

@@ -14,10 +14,10 @@ function Footer() {
             <div className="navList">
                 <ul>
                 <li><a href="https://www.facebook.com/tec.vit/"><LanguageIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
-                    <li><a href="https://www.facebook.com/tec.vit/"><FacebookIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
-                    <li><a href="https://www.linkedin.com/company/the-electronics-club-vit/"><LinkedInIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
-                    <li><a href="https://www.instagram.com/tec.vit/?hl=en"><InstagramIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
-                    <li><a href="https://www.youtube.com/"><YouTubeIcon style={{marginTop:"6px",color:"#000"}}/></a></li> 
+                    <li><a target="__blank" href="https://www.facebook.com/tec.vit/"><FacebookIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
+                    <li><a target="__blank" href="https://www.linkedin.com/company/the-electronics-club-vit/"><LinkedInIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
+                    <li><a target="__blank" href="https://www.instagram.com/tec.vit/?hl=en"><InstagramIcon style={{marginTop:"6px",color:"#000"}}/></a></li>
+                    <li><a target="__blank" href="https://www.youtube.com/"><YouTubeIcon style={{marginTop:"6px",color:"#000"}}/></a></li> 
                 </ul> 
             </div> 
 <div className="credits"><p className="creditstext" style={{fontSize:"14px"}}>Developed with ♥ by TECHies: Aparna, Ekta, Ayush and Rajarshi !</p></div>
