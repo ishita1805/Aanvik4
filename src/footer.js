@@ -20,7 +20,7 @@ function Footer() {
                     <li><a target="__blank" href="https://www.youtube.com/"><YouTubeIcon style={{marginTop:"6px",color:"#000"}}/></a></li> 
                 </ul> 
             </div> 
-<div className="credits"><p className="creditstext" style={{fontSize:"14px"}}>Developed with ♥ by TECHies: Aparna, Ekta, Ayush and Rajarshi !</p></div>
+<div className="credits"><p className="creditstext" style={{fontSize:"14px"}}>Developed with ♥ by TEChies: Aparna, Ekta, Ayush and Rajarshi</p></div>
 
 
         </div>

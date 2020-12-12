@@ -56,7 +56,7 @@ function Cards() {
     return (
         <div className="container" id="container">
 
-            <h2 className="whitetitle" style={{ fontFamily: "Poppins,sans-serif" }}>Take a peek at our projects...</h2>
+            <h2 className="whitetitle" style={{ fontFamily: "Poppins,sans-serif" }}>Take a peek at our projects</h2>
             <div className="cardcon1">
 
                 <Tilt className="box" options={options} >
