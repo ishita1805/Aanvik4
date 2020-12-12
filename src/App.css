@@ -83,7 +83,8 @@ width: 100%;
   transform:scale(1.15);
 }
 
-.suppinfo{transition: ease all 4s;
+.suppinfo{
+  transition: ease all 0.6s;
   z-index: 1000000000;
 display: var(--suppdisp);
   background-color: var(--suppinfocol);

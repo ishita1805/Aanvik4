@@ -1,7 +1,7 @@
 import React,{Component,lazy,Suspense,useEffect,useState} from 'react'
 import './App.css';
 import Bg from './bg'
-import Particles from './Particles'
+// import Particles from './Particles'
 import Cards from './cards'
 import Logo from './logo'
 import Loading from './loading'
@@ -24,11 +24,11 @@ const [open,setOpen]=useState(false);
 
 
 window.addEventListener("click",()=>{
-if(open==true)
+if(open===true)
 {
   root.style.setProperty('--suppdisp','visible')
 }
-else if(open==false){
+else if(open===false){
   root.style.setProperty('--suppdisp','none')
 }
 })
@@ -38,8 +38,8 @@ else if(open==false){
       var h=window.innerHeight;
       if(window.scrollY>(0.074*h))
       {
-              root.style.setProperty('--supportcolor','black')
-              root.style.setProperty('--suppinfocol','black')
+              root.style.setProperty('--supportcolor','grey')
+              root.style.setProperty('--suppinfocol','grey')
               root.style.setProperty('--supptextcol','white')
               root.style.setProperty('--navdisp','visible')
           
@@ -71,7 +71,7 @@ useEffect(()=>{
       
       {/* <Bg/> */}
       
-      <div className="particlewrapper"><Particles/></div>
+      {/* <div className="particlewrapper"><Particles/></div> */}
       <Logo/>
       <Intro/>
 
@@ -81,7 +81,7 @@ useEffect(()=>{
       {/* </Suspense> */}
       <div className="suppinfo" style={{position:"fixed",color:"green",right:"0",zIndex:"10000000000"}}>
         <div className="supptext">
-          <h2>Contact</h2>
+          <p>Rajarshi: +91 9999999999<br/> Keshav: +91 9999999999</p>
         </div>
       </div>
       <NavigationIcon className="suppicon" id="navbtn" style={{zoom:"2.15",position:"fixed",bottom:"8",zIndex:"100000",right:"35"}} onClick={function(){

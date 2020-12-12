@@ -60,22 +60,6 @@ function Cards() {
             <h2 className="whitetitle" style={{fontFamily:"Poppins,sans-serif"}}>Take a peek at our projects...</h2>
 <div className="cardcon1"> 
 
- 
-
- {/* const {options} = props; */}
-
- 
-
-  
-
-
-
-
-
-
-{/* <Tilt options={{perspective:"200",speed:"1000" , max:50}}
-style={{backdropFilter:"blur(5px)"}}
-className="tilter"  style={{height:"330px"}}> */} 
 <Tilt className="box" options={options} >
             <div className="card" id="card1" >
             
@@ -125,10 +109,8 @@ className="tilter"  style={{height:"330px"}}> */}
             </Tilt>
             {/* </Tilt> */}
 
-            </div>
-            
-            
-            <div className="cardcon2">
+          
+        
             {/* <Tilt options={{perspective:500,speed:"500"}} className="tilter"  style={{height:"330px",paddingTop:"0px",top:"10px",backdropFilter:"blur(5px)"}}> */}
             <Tilt className="box" options={options}>
             <div className="card" id="card4">

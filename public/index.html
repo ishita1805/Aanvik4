@@ -10,34 +10,109 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>AANVIK 4.0 - TEC's Online Expo!</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS(
+      "particles-js", 
+      { "particles": 
+        { "number": 
+          { 
+            "value": 80, 
+            "density": { 
+              "enable": true, 
+              "value_area": 1000 
+            } 
+          }, 
+          "color": { 
+            "value": "#ffffff" 
+          }, 
+          "opacity": { 
+            "value": 0.5, 
+            "random": false,
+            "anim": { 
+              "enable": false, 
+              "speed": 1, 
+              "opacity_min": 0.4, 
+              "sync": false 
+            } 
+          }, 
+          "size": { 
+            "value": 2, 
+            "random": true, 
+            "anim": { 
+              "enable": false, 
+              "speed": 40, 
+              "size_min": 0.5, 
+              "sync": false 
+            } 
+          }, 
+          "line_linked": { 
+            "enable": true, 
+            "distance": 120, 
+            "color": "#ffffff", 
+            "opacity": 0.5, 
+            "width": 1 
+          }, 
+          "move": { 
+            "enable": true, 
+            "speed": 4, 
+            "direction": "none", 
+            "random": false, 
+            "straight": false, 
+            "out_mode": "out", 
+            "bounce": false, 
+            "attract": { 
+              "enable": false, 
+              "rotateX": 600, 
+              "rotateY": 1200 
+            } 
+          } 
+        }, 
+        "interactivity": { 
+          "detect_on": "canvas", 
+          "events": { 
+            "onhover": { 
+              "enable": true, 
+              "mode": "repulse" 
+            }, 
+            "onclick": { 
+              "enable": true, 
+              "mode": "push" 
+            }, 
+            "resize": true 
+          }, 
+          "modes": { 
+            "grab": { 
+              "distance": 400, 
+              "line_linked": { 
+                "opacity": 1 
+              } }, 
+              "bubble": { 
+                "distance": 400, 
+                "size": 40, 
+                "duration": 2, 
+                "opacity": 8, 
+                "speed": 3 
+              }, "repulse": { 
+                "distance": 200, 
+                "duration": 0.4 
+              }, 
+              "push": { 
+                "particles_nb": 4 
+              }, 
+              "remove": { 
+                "particles_nb": 2
+              } 
+            } 
+          }, 
+          "retina_detect": true 
+        });
+  </script>
 </html>

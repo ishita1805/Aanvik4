@@ -15,21 +15,21 @@
 }
 
 .proj1 {
- background-image: url("https://i.ibb.co/FWTH3Kz/1.jpg");
+ background-image: url("https://lh3.googleusercontent.com/proxy/plKSsApUtzjyTJrVhXjfjFHuRvHVfHnvONsFps5c4Ah9dnibv98K7HpsSDyTlUfCCKn_0kCHMTOmPCBu7k5gvwZpp13rSw");
  background-size: cover;
 
   
  height: 85px !important;
 }
 .proj2 {
-  background-image: url("https://i.ibb.co/1bRzsCH/2.jpg");
+  background-image: url("https://www.edureka.co/blog/wp-content/uploads/2018/08/Object-Detection-in-Tensorflow-1.png");
   background-size: cover;
  
    
   height: 85px !important;
  }
  .proj3 {
-  background-image: url("https://i.ibb.co/FWTH3Kz/1.jpg");
+  background-image: url("https://forum.mysensors.org/uploads/upload-aacf9418-0c17-417b-b340-0ce5026a8ba0.jpg");
   background-size: cover;
  
    
@@ -125,6 +125,10 @@
   margin-top: 15px;
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  width:70%;
   margin-bottom: -0.8%;
 }
 
@@ -153,9 +157,9 @@
   margin-top: 30px;
 }
 
-.card:hover .proj1{
+/* .card:hover .proj1{
 display: none !important;
-}
+} */
 .onelineintro{
   display:none;
 }
@@ -164,7 +168,7 @@ display: none !important;
   color: black;
 }
 
-.card:hover .proj2{
+/* .card:hover .proj2{
   display: none !important;
   }
 
@@ -178,7 +182,7 @@ display: none !important;
 
       .card:hover .proj5{
         display: none !important;
-        }
+        } */
 
 .content p {
   font-size: 1em;
@@ -235,13 +239,12 @@ display: none !important;
   transform:scale(1.2);
   transition: ease all 0.5s;
 }
-
-@media only screen and (max-width: 950px) {
-  .cardcon1,
-  .cardcon2 {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width:1200px){
+  .cardcon1{
+    width:90%;
   }
+}
+@media only screen and (max-width: 950px) {
   .container {
     display: flex;
     flex-direction: column; 
@@ -272,11 +275,6 @@ display: none !important;
 }
 
 @media only screen and (max-width: 768px) {
-  .cardcon1,
-  .cardcon2 {
-    display: flex;
-    flex-direction: column;
-  }
   .container {
     display: flex;
     flex-direction: column;

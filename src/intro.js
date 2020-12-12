@@ -40,12 +40,13 @@ function Intro() {let root=document.documentElement;
       };
     return (
         <div className="intro">
+            <div id="particles-js"></div>
             <Tilt className="box1" options={options} >
             <img className="aanviklogo" src="https://i.ibb.co/wpDX1vZ/aanvik.png" alt=""/></Tilt>
        <a className="linkcontents"  style={{color:"white",marginTop:"110px",border:"0.5px solid grey",padding:"15px",cursor:"pointer",textDecoration:"none",zIndex:"100000"}} onClick={function(){
            document.getElementById("container").scrollIntoView({behavior:"smooth"})}} ><span></span> <span></span> <span></span> <span></span>JOIN THE EXPO</a>
             <p className="weltext" style={{color:"white",marginTop:"2%"}}>Welcome to the 4th Edition of AANVIK</p>
-<ExpandMoreIcon className="arrowdown" style={{color:"white",zoom:"3",position:"absolute",bottom:"0"}} onClick={function(){
+<ExpandMoreIcon className="arrowdown" style={{zoom:"3",position:"absolute",bottom:"0"}} onClick={function(){
            document.getElementById("container").scrollIntoView({behavior:"smooth"})}}/>
            
 

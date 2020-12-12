@@ -1,6 +1,6 @@
 .footer__body {
-  background-color: grey;
-  height: 27vh; /*woh black part hatane ki koshish kar rahi hoon*/
+  background-color: rgb(20, 20, 20);
+  height: 30vh; /*woh black part hatane ki koshish kar rahi hoon*/
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -10,12 +10,13 @@
   align-items: center;
   justify-content: center;
 }
-.creditstext{position: absolute;
-  bottom:0;
+.creditstext{
+  position: absolute;
+  bottom:22px;
   display:flex;
   align-items: center;
   z-index: 10000;
-  color:black;
+  color:rgb(255, 255, 255);
 }
 .aanviklogo1 {
   width: 120px;
