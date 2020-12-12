@@ -81,7 +81,7 @@ useEffect(()=>{
       {/* </Suspense> */}
       <div className="suppinfo" style={{position:"fixed",color:"green",right:"0",zIndex:"10000000000"}}>
         <div className="supptext">
-          <p>Rajarshi: +91 9999999999<br/> Keshav: +91 9999999999</p>
+          <p>Keshav: +91 6393352592<br/>Rajarshi: +91 6289363522</p>
         </div>
       </div>
       <NavigationIcon className="suppicon" id="navbtn" style={{zoom:"2.15",position:"fixed",bottom:"8",zIndex:"100000",right:"35"}} onClick={function(){
