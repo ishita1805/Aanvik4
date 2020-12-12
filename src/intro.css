@@ -1,26 +1,233 @@
-.intro{
-    height: 70vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-}
-.aanviklogo{position: absolute;
-    width:450px;
-    margin-top: -220px;
-    z-index:10000;
+:root{
+  --opacitycont:1;
 }
 
-.aanviklogo:hover{
-transform:scale(1.1);
+.intro {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.aanviklogo {
+  position: absolute;
+  width: 450px;
+  /* margin-top: -220px; */
+  z-index: 10000;
+  transform: translate(-50%,-50%);
 }
 
+.aanviklogo:hover {
+  /* transform: scale(1.1); */
+  /* transform-style: preserve-3d;
+  transform: perspective(1000px); */
+}
+
+.linkcontents {
+  cursor: pointer !important;
+}
+
+.arrowdown {transition: ease all 0.5s;
+  z-index: 100000;
+  cursor: pointer;
+  animation: arrowdown 1s ease-in-out infinite;
+}
+.arrowdown:hover{
+  transform: scale(1.3);
+  transition: ease all 0.5s;
+}
+
+.arrowdown::before,
+.arrowdown::after {
+  content: "";
+  transition: ease all 0.5s;
+  position: absolute;
+  top: 0%;
+}
+
+.arrowdown::after {transition: ease all 0.5s;
+  position: absolute;
+  top: 10%;
+  animation: arrowdown 1s ease-in-out infinite;
+}
+
+@keyframes arrowdown {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.linkcontents {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+
+  background: none;
+}
+
+.linkcontents:hover {
+  color: white;
+  background: #42bd45;
+  transition-delay: 1s;
+
+  box-shadow: 0 0 10px #42bd45, 0 0 40px #42bd45, 0 0 10px #42bd45;
+}
+.linkcontents span {
+  position: absolute;
+  display: block;
+}
+
+.linkcontents span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #42bd45);
+}
+
+.linkcontents:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+.linkcontents span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #42bd45);
+}
+
+.linkcontents:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.linkcontents span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #42bd45);
+}
+
+.linkcontents:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.linkcontents span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #42bd45);
+}
+
+.linkcontents:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .aanviklogo{
+    width: 350px;
+    margin-top:0px;
+  }
+  .linkcontents{
+    position: absolute;
+    margin-bottom: -15%;
+  }
+  .weltext{position: absolute;
+    margin-bottom: -40%;
+    font-size:12px;
+  }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .weltext{position: absolute;
+      margin-bottom: -42%;
+      font-size:12px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .weltext{position: absolute;
+      margin-bottom: -44%;
+      font-size:12px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .weltext{position: absolute;
+      margin-bottom: -46%;
+      font-size:12px;
+    }
+    .linkcontents{
+      position: absolute;
+      margin-bottom: -15%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .linkcontents{
+      position: absolute;
+      margin-bottom: -15%;
+    }
+  
+    .weltext{position: absolute;
+      margin-bottom: -50%;
+      font-size:12px;
+  }
+.aanviklogo{width: 320px;}
+}
+
+@media only screen and (max-width: 550px) {
+  .linkcontents{
+    position: absolute;
+    margin-bottom: -20%;
+  }
+  .weltext{position: absolute;
+    margin-bottom: -60%;
+    font-size:12px;
+}
+}
+@media only screen and (max-width: 500px) {
+.aanviklogo{
+  width: 280px !important;
+}
 
 .linkcontents{
-    cursor: pointer !important;
+  zoom:0.9;
+}
 }
 
-.arrowdown{
-    transform:rotateZ(90);
+@media only screen and (max-width: 450px) {
+.weltext{
+  margin-bottom: -70%;
+}
+.linkcontents{
+  margin-bottom: -22%;}
 }

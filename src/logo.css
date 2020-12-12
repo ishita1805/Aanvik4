@@ -1,25 +1,83 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
+:root {
+  --headbg: none;
+  --dispheader: none;
+  --displogo: none;
+  --displogo1: none;
+  --scwidth: 0%;
+  --teclogofloat: left;
+  --ml: 5px;
+}
+* {
+}
+.progressbar {
+  background-color: #42bd45;
+  height: 0.25vh;
+  width: var(--scwidth);
+  transition: ease-in-out 0.5s;
+}
+.header {
+  background: none;
+  transition: ease all 0.5s;
 
-
-.header{/*display: flex;
+  width: 100%;
+  /*display: flex;
     flex-direction: row;*/
-   
+  position: fixed;
+  top: 0;
+  z-index: 100000000000;
+}
+.abc {
+  position: absolute;
+  /* flex:0.8; */
+  color: #ededed;
+  top: 0;
+  margin-left: -200px;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.TEC_logo {
+  float: left;
+  /* flex:0.2; */
+  z-index: 1000;
+  display: var(--displogo);
+  transition: ease all 1s;
+}
+.TEC_logo1 {
+  float: left;
+  /* flex:0.2; */
+  z-index: 1000;
+  display: var(--displogo1);
+  transition: ease all 1s;
+}
+
+@media only screen and (max-width: 650px) {
+  .TEC_logo {
+    margin-left: 10px !important;
+    margin-top: 10px !important;
   }
- .abc{position: absolute; 
-    /* flex:0.8; */
- color: #ededed;
- top: 0;
- margin-left:-200px;
-align-items: center;
- font-size: 1.8rem;
- font-family: "Poppins", sans-serif;
-
+  .TEC_logo1 {
+    margin-left: 10px !important;
+    margin-top: 10px !important;
+  }
 }
 
-.TEC_logo{float: left;
-    /* flex:0.2; */
-    z-index: 1000;
-
+@media only screen and (max-width: 600px) {
+  .TEC_logo,
+  .TEC_logo1 {
+    width: 85px !important;
+  }
 }
 
+@media only screen and (max-width: 500px) {
+  .header {
+    background: var(--headbg);
+  }
+  .TEC_logo1,
+  .TEC_logo {
+    float: var(--teclogofloat);
+  }
+}

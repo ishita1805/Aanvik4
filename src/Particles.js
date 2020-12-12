@@ -9,7 +9,7 @@ export const Particlesjs = () => {
         top: 0,
         left: 0,
         width: "100%",
-        zIndex: 1,
+        zindex: 500,
       }}
     >
       <Particles
